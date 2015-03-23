@@ -1,4 +1,4 @@
-# Parallel-Permutation-Algorithm C++
-C++ parallel matrix permutation algorithm for the Traveling Salesman Problem. Non-parallel CPU version only for now.
+# Parallel Permutation Matrix Algorithm C++
+C++ parallel permutation matrix generation algorithm.
 
-It is actually slower that the STL permutation iterator, but this example should scale much better on the GPU than the recursive versions for the CPU as it computes the table and then the actual value on the backwards pass.
+The CPU version is actually slower that the STL permutation iterator, but the CUDA version that is meant for the ArrayFire library is order or two of magnitude faster depending on the version.
